@@ -6,7 +6,7 @@ st.set_page_config(page_title="BraveFit", layout="wide")
 
 # Intro text
 st.markdown("""
-<div style='text-align: center;'>
+<div style='text-align: left;'>
     <h1 style="font-family: 'Georgia', serif; font-size: 3em; font-weight: bold; letter-spacing: 1px; margin-bottom: 0.2em;">
         BraveFit
     </h1>
