@@ -1,11 +1,11 @@
+
 import streamlit as st
 from PIL import Image
 
-st.set_page_config(page_title="BMI Health Adviser", layout="wide")
+st.set_page_config(page_title="BraveFit", layout="wide")
 
 # Intro text
-st.markdown("""
-## 👋 Welcome to **Your Health Adviser**!
+st.markdown("""    ## 👋 Welcome to **BraveFit**!
 
 This interactive app helps you understand whether you're in good physical shape.
 
@@ -39,17 +39,15 @@ def get_bmi_category(age, gender, bmi):
     else:
         return "Obese"
 
-# Create layout: Three columns (left, middle, right)
+# Three‑column layout
 left_col, mid_col, right_col = st.columns([1, 2, 1])
 
-# LEFT COLUMN IMAGES
 with left_col:
     st.image(img_dumbbell, caption="💪 Strength Training", use_container_width=True)
     st.image(img_eating, caption="🥗 Healthy Eating", use_container_width=True)
 
-# MIDDLE COLUMN: FORM
 with mid_col:
-    st.title("🏋️‍♂️ BMI Health Adviser")
+    st.title("🏋️‍♂️ BraveFit")
     st.write("Find out your Body Mass Index (BMI) and get personalized advice.")
 
     age = st.number_input("Enter your age", min_value=1, max_value=120)
@@ -65,7 +63,7 @@ with mid_col:
         st.subheader(f"📌 Category: `{category}`")
 
         if category == "Underweight":
-            st.info("💡 **Advice:** Eat nutritious, high-calorie foods and consult a doctor.")
+            st.info("💡 **Advice:** Eat nutritious, high‑calorie foods and consult a doctor.")
         elif category == "Normal weight":
             st.success("🎉 **Advice:** You’re doing great! Stay active and eat healthy.")
         elif category == "Overweight":
@@ -73,7 +71,12 @@ with mid_col:
         else:
             st.error("🚨 **Advice:** Focus on consistent healthy habits — smart eating, daily movement, and enough rest.")
 
-# RIGHT COLUMN IMAGES
 with right_col:
     st.image(img_treadmill, caption="🏃‍♂️ Cardio Workout", use_container_width=True)
     st.image(img_skipping, caption="🤸‍♂️ Skipping Rope", use_container_width=True)
+
+# Footer
+st.markdown("""<hr style='margin-top:3em'>
+<div style='text-align:center;color:gray;font-size:0.9em;'>
+    Created with ❤️ by <strong>Shaurya</strong>
+</div>""", unsafe_allow_html=True)
