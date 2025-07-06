@@ -5,7 +5,9 @@ from PIL import Image
 st.set_page_config(page_title="BraveFit", layout="wide")
 
 # Intro text
-st.markdown("""    ## 👋 Welcome to **BraveFit**!
+st.markdown("""    ## **BraveFit**
+
+#### *Created by Shaurya*
 
 This interactive app helps you understand whether you're in good physical shape.
 
