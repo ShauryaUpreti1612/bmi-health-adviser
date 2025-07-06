@@ -15,17 +15,15 @@ st.markdown("""
     </h4>
 </div>
 
-<p style='text-align: center; max-width: 800px; margin: auto;'>
-    This interactive app helps you understand whether you're in good physical shape.<br><br>
+This interactive app helps you understand whether you're in good physical shape.
 
-    We classify health into four categories based on BMI:  
-    <strong>Underweight</strong>, <strong>Normal</strong>, <strong>Overweight</strong>, and <strong>Obese</strong>.<br><br>
+We classify health into four categories based on BMI:  
+<b>Underweight</b>, <b>Normal</b>, <b>Overweight</b>, and <b>Obese</b>.
 
-    You’ll be asked to enter your <strong>age</strong>, <strong>gender</strong>, <strong>weight</strong>, and <strong>height</strong>.<br>
-    Using this information, we’ll calculate your <strong>Body Mass Index (BMI)</strong> and give you personalized advice.<br><br>
+You’ll be asked to enter your <b>age</b>, <b>gender</b>, <b>weight</b>, and <b>height</b>.<br>
+Using this information, we’ll calculate your <b>Body Mass Index (BMI)</b> and give you personalized advice.
 
-    ➡️ <em>After entering your age, press the <strong>Enter</strong> key to continue.</em>
-</p>
+➡️ <i>After entering your age, press the <b>Enter</b> key to continue.</i>
 """, unsafe_allow_html=True)
 
 
