@@ -7,20 +7,27 @@ st.set_page_config(page_title="BraveFit", layout="wide")
 # Intro text
 st.markdown("""
 <div style='text-align: center;'>
-    <h2><strong>BraveFit</strong></h2>
-    <h4><em>Created by Shaurya</em></h4>
+    <h1 style="font-family: 'Georgia', serif; font-size: 3em; font-weight: bold; letter-spacing: 1px; margin-bottom: 0.2em;">
+        BraveFit
+    </h1>
+    <h4 style="color: gray; font-family: sans-serif; margin-top: 0;">
+        Created by Shaurya
+    </h4>
 </div>
 
-This interactive app helps you understand whether you're in good physical shape.
+<p style='text-align: center; max-width: 800px; margin: auto;'>
+    This interactive app helps you understand whether you're in good physical shape.<br><br>
 
-We classify health into four categories based on BMI:  
-<b>Underweight</b>, <b>Normal</b>, <b>Overweight</b>, and <b>Obese</b>.
+    We classify health into four categories based on BMI:  
+    <strong>Underweight</strong>, <strong>Normal</strong>, <strong>Overweight</strong>, and <strong>Obese</strong>.<br><br>
 
-You’ll be asked to enter your <b>age</b>, <b>gender</b>, <b>weight</b>, and <b>height</b>.<br>
-Using this information, we’ll calculate your <b>Body Mass Index (BMI)</b> and give you personalized advice.
+    You’ll be asked to enter your <strong>age</strong>, <strong>gender</strong>, <strong>weight</strong>, and <strong>height</strong>.<br>
+    Using this information, we’ll calculate your <strong>Body Mass Index (BMI)</strong> and give you personalized advice.<br><br>
 
-➡️ <i>After entering your age, press the <b>Enter</b> key to continue.</i>
+    ➡️ <em>After entering your age, press the <strong>Enter</strong> key to continue.</em>
+</p>
 """, unsafe_allow_html=True)
+
 
 # Load images
 img_dumbbell = Image.open("dumbbell.png")
