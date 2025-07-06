@@ -3,6 +3,21 @@ from PIL import Image
 
 st.set_page_config(page_title="BMI Health Adviser", layout="wide")
 
+# Intro text
+st.markdown("""
+## 👋 Welcome to **Your Health Adviser**!
+
+This interactive app helps you understand whether you're in good physical shape.
+
+We classify health into four categories based on BMI:  
+**Underweight**, **Normal**, **Overweight**, and **Obese**.
+
+You’ll be asked to enter your **age**, **gender**, **weight**, and **height**.  
+Using this information, we’ll calculate your **Body Mass Index (BMI)** and give you personalized advice.
+
+➡️ *After entering your age, press the **Enter** key to continue.*
+""")
+
 # Load images
 img_dumbbell = Image.open("dumbbell.png")
 img_eating = Image.open("eating.png")
