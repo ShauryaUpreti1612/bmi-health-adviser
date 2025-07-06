@@ -5,20 +5,22 @@ from PIL import Image
 st.set_page_config(page_title="BraveFit", layout="wide")
 
 # Intro text
-st.markdown("""    ## **BraveFit**
-
-#### *Created by Shaurya*
+st.markdown("""
+<div style='text-align: center;'>
+    <h2><strong>BraveFit</strong></h2>
+    <h4><em>Created by Shaurya</em></h4>
+</div>
 
 This interactive app helps you understand whether you're in good physical shape.
 
 We classify health into four categories based on BMI:  
-**Underweight**, **Normal**, **Overweight**, and **Obese**.
+<b>Underweight</b>, <b>Normal</b>, <b>Overweight</b>, and <b>Obese</b>.
 
-You’ll be asked to enter your **age**, **gender**, **weight**, and **height**.  
-Using this information, we’ll calculate your **Body Mass Index (BMI)** and give you personalized advice.
+You’ll be asked to enter your <b>age</b>, <b>gender</b>, <b>weight</b>, and <b>height</b>.<br>
+Using this information, we’ll calculate your <b>Body Mass Index (BMI)</b> and give you personalized advice.
 
-➡️ *After entering your age, press the **Enter** key to continue.*
-""")
+➡️ <i>After entering your age, press the <b>Enter</b> key to continue.</i>
+""", unsafe_allow_html=True)
 
 # Load images
 img_dumbbell = Image.open("dumbbell.png")
