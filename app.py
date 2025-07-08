@@ -40,9 +40,6 @@ Using this information, we’ll calculate your <b>Body Mass Index (BMI)</b> and 
 
 # Load images
 img_dumbbell = Image.open("dumbbell.png")
-img_eating = Image.open("eating.png")
-img_treadmill = Image.open("treadmill.png")
-img_skipping = Image.open("skipping.png")
 
 # BMI calculation functions
 def calculate_bmi(weight_kg, height_cm):
@@ -92,6 +89,10 @@ with mid_col:
             st.error("🚨 **Advice:** Focus on consistent healthy habits — smart eating, daily movement, and enough rest.")
 
 with right_col:
+    img_eating = Image.open("eating.png")
+    img_treadmill = Image.open("treadmill.png")
+    img_skipping = Image.open("skipping.png")
+
     st.image(img_treadmill, caption="🏃‍♂️ Cardio Workout", use_container_width=True)
     st.image(img_skipping, caption="🤸‍♂️ Skipping Rope", use_container_width=True)
 
