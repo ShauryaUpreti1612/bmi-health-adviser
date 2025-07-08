@@ -15,13 +15,6 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-st.markdown("""
-<div style='position: absolute; top: 10px; right: 20px; z-index: 100;'>
-    <a href='https://www.youtube.com/@Shaurya-h6c' target='_blank' style='text-decoration: none; font-size: 16px; color: #3366cc;'>
-        📺 Visit My Channel
-    </a>
-</div>
-""", unsafe_allow_html=True)
 
 # Intro text
 st.markdown("""
