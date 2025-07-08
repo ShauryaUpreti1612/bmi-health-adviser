@@ -40,7 +40,7 @@ Using this information, we’ll calculate your <b>Body Mass Index (BMI)</b> and 
 
 # Load images
 img_dumbbell = Image.open("dumbbell.png")
- img_eating = Image.open("eating.png")
+img_eating = Image.open("eating.png")
 
 # BMI calculation functions
 def calculate_bmi(weight_kg, height_cm):
