@@ -3,6 +3,18 @@ import streamlit as st
 from PIL import Image
 
 st.set_page_config(page_title="BraveFit", layout="wide")
+
+st.markdown("""
+<div style='position: absolute; top: 10px; right: 20px; text-align: center; z-index: 100;'>
+    <a href='https://www.youtube.com/@Shaurya-h6c' target='_blank' style='text-decoration: none;'>
+        <img src='https://raw.githubusercontent.com/ShauryaUpreti1612/bmi-health-adviser/main/logo.jpg' width='80' style='border-radius: 10px;'><br>
+        <button style='margin-top: 8px; padding: 6px 12px; font-size: 14px; background-color: #e63946; color: white; border: none; border-radius: 5px; cursor: pointer;'>
+            Visit My Channel
+        </button>
+    </a>
+</div>
+""", unsafe_allow_html=True)
+
 st.markdown("""
 <div style='position: absolute; top: 10px; right: 20px; z-index: 100;'>
     <a href='https://www.youtube.com/@Shaurya-h6c' target='_blank' style='text-decoration: none; font-size: 16px; color: #3366cc;'>
