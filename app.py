@@ -2,7 +2,6 @@
 import streamlit as st
 from PIL import Image
 
-st.set_page_config(page_title="BraveFit", layout="wide")
 
 # Intro text
 st.markdown("""
@@ -26,6 +25,7 @@ Using this information, we’ll calculate your <b>Body Mass Index (BMI)</b> and 
 ➡️ <i>After entering your age, press the <b>Enter</b> key to continue.</i>
 """, unsafe_allow_html=True)
 
+st.video("https://www.youtube.com/watch?v=Qtk_zESAU9E")
 
 # Load images
 img_dumbbell = Image.open("dumbbell.png")
