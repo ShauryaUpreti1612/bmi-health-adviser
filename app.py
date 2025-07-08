@@ -2,6 +2,14 @@
 import streamlit as st
 from PIL import Image
 
+st.set_page_config(page_title="BraveFit", layout="wide")
+st.markdown("""
+<div style='position: absolute; top: 10px; right: 20px; z-index: 100;'>
+    <a href='https://www.youtube.com/@Shaurya-h6c' target='_blank' style='text-decoration: none; font-size: 16px; color: #3366cc;'>
+        📺 Visit My Channel
+    </a>
+</div>
+""", unsafe_allow_html=True)
 
 # Intro text
 st.markdown("""
@@ -24,8 +32,6 @@ Using this information, we’ll calculate your <b>Body Mass Index (BMI)</b> and 
 
 ➡️ <i>After entering your age, press the <b>Enter</b> key to continue.</i>
 """, unsafe_allow_html=True)
-
-st.video("https://www.youtube.com/watch?v=Qtk_zESAU9E")
 
 # Load images
 img_dumbbell = Image.open("dumbbell.png")
